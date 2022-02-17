@@ -159,7 +159,7 @@ def YoutubeAuto():
 
     elif 'my channel' in query:
 
-        web.open("https://www.youtube.com/channel/UC7A5u12yVIZaCO_uXnNhc5g")
+        web.open("place your channel link")
 
     else:
         speak("No Command Found!")
