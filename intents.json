@@ -1,0 +1,31 @@
+{
+    "intents":[
+
+        {
+            "tag":"greeting",
+            "patterns":["hello","hii","utho jaan","wake up","jerry"
+            ],
+            "responses":["hello sir","how are you","always for you sir","here's your assistant."
+
+            ]
+        },
+        {
+            "tag":"bye",
+            "patterns":["bye","good bye","I have to go","sleep","see you later"
+            ],
+            "responses":["good bye sir","i am going sir","see you again sir","It will be nice to meet you again."
+
+            ]           
+        },
+        {
+            "tag":"health",
+            "patterns":["how is going","are you okay","every thing is fine","feeling well?","Any problem"
+            ],
+            "responses":["i am fine sir","good sir","everything is fine sir","very well."
+
+            ]
+        }
+
+    ]   
+
+}
