@@ -529,7 +529,7 @@ if __name__ == "__main__":
 
                 if now == time:
                     speak("Time To Wake Up Sir!")
-                    playsound('05 Main Tera Boyfriend - Raabta (Arijit Singh) 190Kbps.mp3')
+                    playsound('music.mp3')
                     speak("Alarm Closed!")
 
                 elif now>time:
@@ -549,16 +549,16 @@ if __name__ == "__main__":
 
             from twilio.rest import Client
 
-            account_sid = 'AC9c9aa8edcfffdff29b3ddf320f104884'
-            auth_token = '1fd8c3382456e2a5dc9a81524cbb1363'
+            account_sid = '' #place your account sid from twilio
+            auth_token = '' #place your auth token from twilio
 
             client = Client(account_sid, auth_token)
 
             message = client.messages \
                 .create(
                     body= msz,
-                    from_='+16076009288',
-                    to='+919305486556'
+                    from_='', #phone no given by twilo
+                    to=''     #phone number
                 )
 
             print(message.sid)
@@ -572,16 +572,16 @@ if __name__ == "__main__":
 
             from twilio.rest import Client
 
-            account_sid = 'AC9c9aa8edcfffdff29b3ddf320f104884'
-            auth_token = '1fd8c3382456e2a5dc9a81524cbb1363'
+            account_sid = '' #account sid
+            auth_token = '' #auth token
 
             client = Client(account_sid, auth_token)
 
             message = client.calls \
                 .create(
                     twiml= '<Response><say>this is second testing message..</Say></Response>',
-                    from_='+16076009288',
-                    to='+919305486556'
+                    from_='',
+                    to=''
                 )
 
             print(message.sid)
